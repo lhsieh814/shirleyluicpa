@@ -1,0 +1,88 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #534029;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+   padding: 60px 15px 0; 
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+/*----------------------------------------------------*/
+/* Phenix custom CSS */
+/*----------------------------------------------------*/
+
+/*Change entire site font to Merriweather*/
+* {
+  font-family: 'Merriweather', serif;
+  color: #424242;
+}
+
+/*Footer text color*/
+.footer > .container > .text-muted {
+  color: #BFBFBF;
+}
+
+.navbar-fixed-top {
+  background-color: #534029;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #FFFFFF;
+}
+
+/*Override brand text color*/
+.navbar-default .navbar-brand {
+  color: #FFFFFF;
+}
+
+.text {
+  font-size: 1.2em;
+  padding-bottom: 1em;
+}
+
+.container > .row > .col-md-4 > ul > li {
+   color: #999;
+   font-size: 1.1em;
+}
+
+.caffethread-header .jumbotron {
+  background-color:#FFFFFF;
+  color: white;
+}
+
+.jumbotron {
+   margin-bottom: 0px;
+}
+
+
