@@ -16,7 +16,7 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
-		<link href="css/phenix.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
 
 <!-- Google analytics -->
 
@@ -69,17 +69,13 @@
 
 	<!-- Widescreen building picture -->
 	<div>
-			<!-- <div class="jumbotron"> -->
-					<div class="container-fluid wide-screen">
-							<!-- <div class="row"> -->
-									<img src="images/board_of_trade_building.png" class="img-responsive" alt="Responsive image">
-							<!-- </div> -->
-					</div>
-			<!-- </div> -->
+		<div class="container-fluid wide-screen">
+			<img src="images/board_of_trade_building.png" class="img-responsive" alt="Responsive image">
+		</div>
 	</div>
 
     <!-- Services Section -->
-    <section id="sevices" class="bg-light-gray">
+    <section id="services" class="white_section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -87,20 +83,25 @@
                 </div>
             </div>
             <div class="row">
-            	<!-- <div class="hexagon"></div> -->
 
+
+
+            </div>
+            <div class="row">
+                <h2>Hello</h2>
+                                <div class="rectangle"></div>
 
             </div>
         </div>
     </section>
 
     	<!-- History Section -->
-    <section id="history">
+    <section id="history" class="burgundy_section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Company History</h2>
-                    <p>Shirley graduated from Concordia University with a bachelor of commerce in account. Immediately after, got recognized as a General Certified Accountant (CGA). She started working in Philip Yip's accounting firm and slowly promoted to partner position. After realizing that Philip was not doing his share of the work, </p>
+                    <p>Shirley graduated from Concordia University with a Bachelor of commerce in Account. Immediately after, got recognized as a General Certified Accountant (CGA). She started working in Philip Yip's accounting firm and slowly promoted to partner position. After realizing that Philip was not doing his share of the work, she decided to leave and start her own accounting firm. Along with her trusty side-kick, Alison Chik, and about a handfull of clients under her arms, she left to Vieux Port of Montreal.</p>
                 </div>
             </div>
             <div class="row text-center">
@@ -109,7 +110,7 @@
     </section>
 
     <!-- Government Links Section -->
-    <section id="government_links">
+    <section id="government_links" class="white_section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -123,7 +124,7 @@
     </section>
 
     <!-- Location Section -->
-    <section id="location">
+    <section id="location" class="burgundy_section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -131,13 +132,23 @@
                 </div>
             </div>
             <div class="row">
-                
+                <div class="col-md-8" id="google_map"></div>
+                <div class="col-md-4">
+                    <br>
+                    <h5>Édifice Board of Trade</h5>
+                    <h5>300, rue du Saint-Sacrement, suite 515</h5>
+                    <h5>Montréal, Québec, Canada</h5>
+                    <h5>H2Y 1X4</h5>
+                    <br>
+                    <h5>Tel: 1-(514)-842-6611</h5>
+                    <h5>Fax: 1-(514)842-3330</h5>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contacts Section -->
-    <section id="contacts">
+    <section id="contacts" class="white_section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -154,7 +165,7 @@
 		<!-- Footer -->
 		<div class="footer">
 				<div class="container">
-						<p class="text-muted">&copy; Shirley Lui 2014</p>
+						<h6 class="text-muted">&copy; Shirley Lui 2014</h6>
 				</div>
 		</div>
 
@@ -171,5 +182,9 @@
 
 	    <!-- Custom Theme JavaScript -->
     	<script src="js/agency.js"></script>
-</body>
+
+        <!-- Google map API -->
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+
+    </body>
 </html>
