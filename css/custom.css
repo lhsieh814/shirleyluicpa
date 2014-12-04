@@ -46,7 +46,7 @@ code {
 /*Change entire site font to Merriweather*/
 * {
   font-family: 'Merriweather', serif;
-  color: #424242;
+  color: #383838;
 }
 
 /*Footer text color*/
@@ -120,11 +120,26 @@ p {
   }
 }
 
-/*Google map*/
-#google_map {
-  width: 500px;
-  height: 400px;
-} 
+ul {
+  list-style-type: none;
+}
+
+a, a:hover, a:visited, a:active {
+  color: #383838;
+  text-decoration: none;
+}
+
+/*Email buttons*/
+.btn-default {
+  border-color: #534029;
+  box-shadow: 
+}
+
+/*Link center*/
+#links {
+  width: 60%;
+  margin: 0 auto;
+}
 
 /*Rectange*/
 .rect {
