@@ -6,11 +6,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Shirley Lui, CPA">
 		<meta name="author" content="Lena Hsieh">
-		<link rel="icon" href="fonts/favicon.ico">
+		<link rel="icon" href="images/favicon.ico">
 		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
 
 		<title>Shirley Lui, CPA</title>
-		<link rel="shortcut icon" href="images/caffethread_icon.ico" >
+		<!-- <link rel="shortcut icon" href="images/caffethread_icon.ico" > -->
 
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,8 +18,35 @@
 		<!-- Custom styles for this template -->
 		<link href="css/custom.css" rel="stylesheet">
 
-<!-- Google analytics -->
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript">
+            $( document ).ready(function() {
+                console.log( "document loaded" );
+                var shirley = ROT13_decrypt("fuveyrl.yhv@fuveyrlyhvpcn.pbz");
+                var alison = ROT13_decrypt("nyvfba.puvx@fuveyrlyhvpcn.pbz");
+                var kim = ROT13_decrypt("xvz.yb@fuveyrlyhvpcn.pbz");
+                var debbie = ROT13_decrypt("qroovr.znu@fuveyrlyhvpcn.pbz");
+                var karen = ROT13_decrypt("xnera.cvmmneqv@fuveyrlyhvpcn.pbz");
+                document.getElementById("shirleyEmail").innerHTML = shirley;
+                document.getElementById("alisonEmail").innerHTML = alison;
+                document.getElementById("kimEmail").innerHTML = kim;
+                document.getElementById("debbieEmail").innerHTML = debbie;
+                document.getElementById("karenEmail").innerHTML = karen;
 
+                // Disable zoom on map until user clicks it
+                $('.maps').click(function () {
+                    $('.maps iframe').css("pointer-events", "auto");
+                });
+                // Disable zoom when mouse leaves the map area
+                $('.maps').mouseleave(function() {
+                    $('.maps iframe').css("pointer-events", "none");
+                });
+            });
+            function ROT13_decrypt(rot13_email) {
+                return rot13_email.replace(/[a-zA-Z]/g,function(c){return String.fromCharCode((c<="Z"?90:122)>=(c=c.charCodeAt(0)+13)?c:c-26);});
+            }
+
+        </script>
 
 </head>
 
@@ -49,16 +76,10 @@
 						<a class="page-scroll" href="#services">Services</a>
 					</li>
 					<li>
-						<a class="page-scroll" href="#history">Company History</a>
-					</li>
-					<li>
-						<a class="page-scroll" href="#government_links">Government Links</a>
-					</li>
-					<li>
 						<a class="page-scroll" href="#location">Location</a>
 					</li>
 					<li>
-						<a class="page-scroll" href="#contacts">Contact</a>
+						<a class="page-scroll" href="#contacts">Contacts</a>
 					</li>
 				</ul>
 			</div>
@@ -70,7 +91,7 @@
 	<!-- Widescreen building picture -->
 	<div>
 		<div class="container-fluid wide-screen">
-			<img src="images/board_of_trade_building.png" class="img-responsive" alt="Responsive image">
+			<img id="wide-pic" src="images/board_of_trade_building.png" class="img-responsive" alt="Responsive image">
 		</div>
 	</div>
 
@@ -83,46 +104,28 @@
                 </div>
             </div>
             <div class="row">
-
-
-
-            </div>
-            <div class="row">
-                <h2>Hello</h2>
-                                <div class="rectangle"></div>
-
-            </div>
-        </div>
-    </section>
-
-    	<!-- History Section -->
-    <section id="history" class="burgundy_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Company History</h2>
-                    <p>Shirley graduated from Concordia University with a Bachelor of commerce in Account. Immediately after, got recognized as a General Certified Accountant (CGA). She started working in Philip Yip's accounting firm and slowly promoted to partner position. After realizing that Philip was not doing his share of the work, she decided to leave and start her own accounting firm. Along with her trusty side-kick, Alison Chik, and about a handfull of clients under her arms, she left to Vieux Port of Montreal.</p>
-                </div>
-            </div>
-            <div class="row text-center">
-            </div>
-        </div>
-    </section>
-
-    <!-- Government Links Section -->
-    <section id="government_links" class="white_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Government Links</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div id="links">
-                    
-                        <p><a href="http://www.google.com">www.google.com</a></p>
-                    
-                </div>
+                <h4>Public Accountancy, Assurance and Other Engagements</h4>
+                    <ul>
+                        <li>Compilation engagments</li>
+                        <li>Review engagements</li>
+                    </ul>
+                <br>
+                <h4>Accounting and Financial Reporting</h4>
+                    <ul>
+                        <li>Accounting standards for private enterprises (ASPE)</li>
+                        <li>Accounting standards for not-for-profit organizations (ASNPO)</li>
+                        <li>Electronic data processing (including bookkeeping and payroll)</li>
+                        <li>Business plans</li>
+                    </ul>
+                <br>
+                <h4>Taxation and Financial Planning</h4>
+                    <ul>
+                        <li>Personal taxation</li>
+                        <li>Corporate taxation</li>
+                        <li>Personal financial planning</li>
+                        <li>Trusts and estates</li>
+                        <li>International taxation</li>
+                    </ul>
             </div>
         </div>
     </section>
@@ -137,7 +140,9 @@
             </div>
             <div class="row">
                 <div class="col-md-8">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.3984457615!2d-73.55686300000002!3d45.50205720000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a59a404ed59%3A0xfc7cfd3cf1cb6c33!2s300+Saint-Sacrament+St%2C+Montreal%2C+QC+H2Y+1X4!5e0!3m2!1sen!2sca!4v1417651279169" width="600" height="450" frameborder="0" style="border:0"></iframe>
+                    <div class='embed-container maps'>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.3984457615!2d-73.55686300000002!3d45.50205720000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a59a404ed59%3A0xfc7cfd3cf1cb6c33!2s300+Saint-Sacrament+St%2C+Montreal%2C+QC+H2Y+1X4!5e0!3m2!1sen!2sca!4v1417651279169" width="600" height="450" frameborder="0" style="border:0"></iframe>
+                    </div>
                 </div>
                 <div class="col-md-4">
                     <br>
@@ -146,8 +151,8 @@
                     <h5>Montréal, Québec, Canada</h5>
                     <h5>H2Y 1X4</h5>
                     <br>
-                    <h5>Tel: 1-(514)-842-6611</h5>
-                    <h5>Fax: 1-(514)842-3330</h5>
+                    <h5>Tel: 1-(514) 842-6611</h5>
+                    <h5>Fax: 1-(514) 842-3330</h5>
                 </div>
             </div>
         </div>
@@ -161,47 +166,43 @@
                     <h2 class="section-heading">Contacts</h2>
                 </div>
             </div>
+            <div class="row text-center bottom-buffer">
+            Tel: 1-(514) 842-6611
+            </div>
+            <div class="row"></div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-3">
                     <div class="row">
                         <div class="col-xs-3">Shirley Lui</div>
                         <div class="col-xs-2">ext: 223</div>
-                        <div class="col-xs-3"><button type="button" class="btn btn-default btn-sm btn-block"><a href="mailto:help@caffethread.com">Email Shirley</a></button></div>
+                        <div class="col-xs-3" id="shirleyEmail"></div>
                     </div>
                     <br>
                     <div class="row">
                         <div class="col-xs-3">Alison Chik</div>
                         <div class="col-xs-2">ext: 222</div>
-                        <div class="col-xs-3"><button type="button" class="btn btn-default btn-sm btn-block"><a href="mailto:help@caffethread.com">Email Alison</a></button></div>
+                        <div class="col-xs-3" id="alisonEmail"></div>
                     </div>
                     <br>
                     <div class="row">
-                        <div class="col-xs-3">Kim </div>
-                        <div class="col-xs-2">ext: 224</div>
-                        <div class="col-xs-3"><button type="button" class="btn btn-default btn-sm btn-block"><a href="mailto:help@caffethread.com">Email Kim</a></button></div>
+                        <div class="col-xs-3">Kim Lo</div>
+                        <div class="col-xs-2">ext: 226</div>
+                        <div class="col-xs-3" id="kimEmail"></div>
                     </div>
                     <br>
                     <div class="row">
                         <div class="col-xs-3">Debbie Mah</div>
-                        <div class="col-xs-2">ext: 224</div>
-                        <div class="col-xs-3"><button type="button" class="btn btn-default btn-sm btn-block"><a href="mailto:help@caffethread.com">Email Debbie</a></button></div>
+                        <div class="col-xs-2">ext: 227</div>
+                        <div class="col-xs-3" id="debbieEmail"></div>
                     </div>
                     <br>
                     <div class="row">
-                        <div class="col-xs-3">Karen</div>
-                        <div class="col-xs-2">ext: 224</div>
-                        <div class="col-xs-3"><button type="button" class="btn btn-default btn-sm btn-block"><a href="mailto:help@caffethread.com">Email Karen</a></button></div>
+                        <div class="col-xs-3">Karen Pizzardi</div>
+                        <div class="col-xs-2">ext: 221</div>
+                        <div class="col-xs-3" id="karenEmail"></div>
                     </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-xs-3">New girl</div>
-                        <div class="col-xs-2">ext: 224</div>
-                        <div class="col-xs-3"><button type="button" class="btn btn-default btn-sm btn-block"><a href="mailto:help@caffethread.com">Email Name</a></button></div>
-                    </div>
-                </div>
-            
-                        
-                    
+                </div>           
+
             </div>
         </div>
     </section>
@@ -210,7 +211,7 @@
 		<!-- Footer -->
 		<div class="footer">
 				<div class="container">
-						<h6 class="text-muted">&copy; Shirley Lui 2014</h6>
+						<h6 class="text-muted">&copy; Shirley Lui, CPA Inc. 2016</h6>
 				</div>
 		</div>
 

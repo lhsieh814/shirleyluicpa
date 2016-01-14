@@ -177,4 +177,14 @@ a, a:hover, a:visited, a:active {
     border-right: 52px solid transparent;
 }
 
+/*Empty row*/
+.bottom-buffer { margin-bottom: 25px; }
 
+/*Google Map*/
+.maps iframe{
+    pointer-events: none;
+}
+
+#wide-pic {
+  width: 100%;
+}
