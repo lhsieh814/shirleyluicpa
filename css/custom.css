@@ -46,7 +46,7 @@ code {
 /*Change entire site font to Merriweather*/
 * {
   font-family: 'Merriweather', serif;
-  color: #383838;
+  /*color: #383838;*/
 }
 
 /*Footer text color*/
@@ -187,4 +187,12 @@ a, a:hover, a:visited, a:active {
 
 #wide-pic {
   width: 100%;
+}
+
+.burgundy_section h4 {
+  color: white;
+}
+
+#contacts.burgundy_section .row {
+  color: white;
 }

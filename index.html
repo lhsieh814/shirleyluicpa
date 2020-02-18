@@ -22,11 +22,13 @@
         <script type="text/javascript">
             $( document ).ready(function() {
                 console.log( "document loaded" );
+                var office = ROT13_decrypt("bssvpr@fuveyrlyhvpcn.pbz");
                 var shirley = ROT13_decrypt("fuveyrl.yhv@fuveyrlyhvpcn.pbz");
                 var alison = ROT13_decrypt("nyvfba.puvx@fuveyrlyhvpcn.pbz");
                 var kim = ROT13_decrypt("xvz.yb@fuveyrlyhvpcn.pbz");
                 var debbie = ROT13_decrypt("qroovr.znu@fuveyrlyhvpcn.pbz");
                 var karen = ROT13_decrypt("xnera.cvmmneqv@fuveyrlyhvpcn.pbz");
+                document.getElementById("officeEmail").innerHTML = office;
                 document.getElementById("shirleyEmail").innerHTML = shirley;
                 document.getElementById("alisonEmail").innerHTML = alison;
                 document.getElementById("kimEmail").innerHTML = kim;
@@ -95,8 +97,32 @@
 		</div>
 	</div>
 
+<!-- Notice Section -->
+    <section id="notice" class="white_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Notice of New Address</h2>
+                </div>
+            </div>
+            <div class="row">
+                <p>
+                    Dès le lundi 2 mars, 2020, Shirley Lui, CPA Inc. aura une nouvelle adresse. En effet, nous déménageons nos locaux afin de nous installer au <b>85, Saint-Paul Ouest, Bureau #220, Montréal, H2Y 3V4</b>.  Toutefois, nos numéros de téléphone et de télécopieur demeurent les mêmes. Veuillez prendre note que, le vendredi 28 février, notre ligne téléphonique sera interrompue.
+                </p>
+                <br>
+                <p>
+                    As of Monday, March 2nd, 2020, Shirley Lui, CPA Inc. will have a new address. We are relocating our offices to <b>85 Saint-Paul Ouest, Bureau #220, Montreal, Quebec, H2Y 3V4</b>.  You may always reach us at the same phone and fax numbers. Please note that on Friday, February 28th, our phone line will be interrupted. 
+                </p>
+                <br>
+                <p>
+                    自2020年3月2日星期一开始，Shirley Lui, CPA Inc. 将搬入新址：<b>85 Saint-Paul Ouest, Bureau #220, Montreal, Quebec, H2Y 3V4</b>。您可以使用之前的电话和传真号码联系我们。请注意2月28日星期五当天我们的电话号码不能使用。
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
-    <section id="services" class="white_section">
+    <section id="services" class="burgundy_section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -131,7 +157,7 @@
     </section>
 
     <!-- Location Section -->
-    <section id="location" class="burgundy_section">
+    <section id="location" class="white_section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -141,15 +167,22 @@
             <div class="row">
                 <div class="col-md-8">
                     <div class='embed-container maps'>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.3984457615!2d-73.55686300000002!3d45.50205720000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a59a404ed59%3A0xfc7cfd3cf1cb6c33!2s300+Saint-Sacrament+St%2C+Montreal%2C+QC+H2Y+1X4!5e0!3m2!1sen!2sca!4v1417651279169" width="600" height="450" frameborder="0" style="border:0"></iframe>
-                    </div>
+-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.3984457615!2d-73.55686300000002!3d45.50205720000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a59a404ed59%3A0xfc7cfd3cf1cb6c33!2s300+Saint-Sacrament+St%2C+Montreal%2C+QC+H2Y+1X4!5e0!3m2!1sen!2sca!4v1417651279169" width="600" height="450" frameborder="0" style="border:0"></iframe>
+-                    </div>
+                    <!-- new office -->
+                   <!--  <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="450" id="gmap_canvas" src="https://maps.google.com/maps?q=85%20Saint-Paul%20Ouest%2C%20montreal%2C%20quebec&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com">whatismyip-address.com</a></div><style>.mapouter{position:relative;text-align:right;height:450px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:600px;}</style></div> -->
                 </div>
                 <div class="col-md-4">
                     <br>
                     <h5>Édifice Board of Trade</h5>
                     <h5>300, rue du Saint-Sacrement, suite 515</h5>
+                    <h5>85 Saint-Paul Ouest, Bureau #220</h5>
                     <h5>Montréal, Québec, Canada</h5>
                     <h5>H2Y 1X4</h5>
+                    <!-- new office -->
+                    <!-- h5>85 Saint-Paul Ouest, Bureau #220</h5>
+                    <h5>Montréal, Québec, Canada</h5>
+                    <h5>H2Y 3V4</h5> -->
                     <br>
                     <h5>Tel: 1-(514) 842-6611</h5>
                     <h5>Fax: 1-(514) 842-3330</h5>
@@ -159,7 +192,7 @@
     </section>
 
     <!-- Contacts Section -->
-    <section id="contacts" class="white_section">
+    <section id="contacts" class="burgundy_section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -168,6 +201,8 @@
             </div>
             <div class="row text-center bottom-buffer">
             Tel: 1-(514) 842-6611
+            </div>
+            <div class="row text-center bottom-buffer" id="officeEmail">
             </div>
             <div class="row"></div>
             <div class="row">
@@ -211,7 +246,7 @@
 		<!-- Footer -->
 		<div class="footer">
 				<div class="container">
-						<h6 class="text-muted">&copy; Shirley Lui, CPA Inc. 2016</h6>
+						<h6 class="text-muted">&copy; Shirley Lui, CPA Inc. 2020</h6>
 				</div>
 		</div>
 
